@@ -22,22 +22,24 @@ namespace XunitTestMessageOfTheDay
             private readonly List<Day> _days;
             private readonly Day _monday;
 
+            private readonly string _mockDayOfWeekMesssageImageURI = "mockDayOfWeekMesssageImageURI";
+
 
             public MessageServicePositiveTests()
             {
                 _mockMessages = new Mock<IMessages>();
 
-                _monday = new Day { DayOfWeek = DayOfWeek.Monday, Message = new Message { Text = "MockMonday" } };
+                _monday = new Day { DayOfWeek = DayOfWeek.Monday, Message = new Message { Text = "MockMonday", ImageUri = _mockDayOfWeekMesssageImageURI } };
 
                 _days = new List<Day>
                 {
                     _monday,
-                    new Day { DayOfWeek = DayOfWeek.Tuesday, Message = new Message { Text = "MockTuesday"} },
-                    new Day { DayOfWeek = DayOfWeek.Wednesday, Message = new Message { Text = "MockWednesday"} },
-                    new Day { DayOfWeek = DayOfWeek.Thursday, Message = new Message { Text = "MockThursday"} },
-                    new Day { DayOfWeek = DayOfWeek.Friday, Message = new Message { Text = "MockFriday"} },
-                    new Day { DayOfWeek = DayOfWeek.Saturday, Message = new Message { Text = "MockSaturday"} },
-                    new Day { DayOfWeek = DayOfWeek.Sunday, Message = new Message { Text = "MockSunday"} },
+                    new Day { DayOfWeek = DayOfWeek.Tuesday, Message = new Message { Text = "MockTuesday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Wednesday, Message = new Message { Text = "MockWednesday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Thursday, Message = new Message { Text = "MockThursday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Friday, Message = new Message { Text = "MockFriday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Saturday, Message = new Message { Text = "MockSaturday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Sunday, Message = new Message { Text = "MockSunday, ImageUri = _mockDayOfWeekMesssageImageURI"} },
                 };
 
                 var messageData = new List<Week>
@@ -93,6 +95,7 @@ namespace XunitTestMessageOfTheDay
             private readonly MessageService _sut;
 
             private string mockExceptionMessage = "No Data Found";
+            private readonly string _mockDayOfWeekMesssageImageURI = "mockDayOfWeekMesssageImageURI";
 
             private readonly List<Day> _days;
 
@@ -102,12 +105,12 @@ namespace XunitTestMessageOfTheDay
 
                 _days = new List<Day>
                 {
-                    new Day { DayOfWeek = DayOfWeek.Tuesday, Message = new Message { Text = "MockTuesday"} },
-                    new Day { DayOfWeek = DayOfWeek.Wednesday, Message = new Message { Text = "MockWednesday"} },
-                    new Day { DayOfWeek = DayOfWeek.Thursday, Message = new Message { Text = "MockThursday"} },
-                    new Day { DayOfWeek = DayOfWeek.Friday, Message = new Message { Text = "MockFriday"} },
-                    new Day { DayOfWeek = DayOfWeek.Saturday, Message = new Message { Text = "MockSaturday"} },
-                    new Day { DayOfWeek = DayOfWeek.Sunday, Message = new Message { Text = "MockSunday"} },
+                    new Day { DayOfWeek = DayOfWeek.Tuesday, Message = new Message { Text = "MockTuesday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Wednesday, Message = new Message { Text = "MockWednesday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Thursday, Message = new Message { Text = "MockThursday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Friday, Message = new Message { Text = "MockFriday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Saturday, Message = new Message { Text = "MockSaturday", ImageUri = _mockDayOfWeekMesssageImageURI} },
+                    new Day { DayOfWeek = DayOfWeek.Sunday, Message = new Message { Text = "MockSunday", ImageUri = _mockDayOfWeekMesssageImageURI} },
                 };
 
                 var messageData = new List<Week>

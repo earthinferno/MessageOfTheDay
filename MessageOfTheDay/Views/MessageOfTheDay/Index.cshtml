@@ -2,10 +2,13 @@
 
 @{
     ViewData["Title"] = "MessageOfTheDay";
+    var imagePath = Model.ImageUri;
 }
 
 <h1>MessageOfTheDay</h1>
 
 <div>
     <p>@Html.DisplayFor(model => model.Message)</p>
+
+    <img src="@imagePath" alt="Sample Photo" />
 </div>

@@ -16,9 +16,11 @@ namespace MessageOfTheDay.Services
 
         public MessageOfTheDayViewModel GetMessageOfTheDay()
         {
+            var message = _messageService.GetMessageOfTheDay(1, _dayOfWeekService.GetDayOfWeek());
             return new MessageOfTheDayViewModel
             {
-                Message = _messageService.GetMessageOfTheDay(1, _dayOfWeekService.GetDayOfWeek()).Text
+                Message = message.Text,
+                ImageUri = message.ImageUri
             };
         }
     }

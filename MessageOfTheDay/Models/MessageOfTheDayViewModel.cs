@@ -8,5 +8,6 @@ namespace MessageOfTheDay.Models
     public class MessageOfTheDayViewModel
     {
         public string Message;
+        public string ImageUri { get; set; }
     }
 }

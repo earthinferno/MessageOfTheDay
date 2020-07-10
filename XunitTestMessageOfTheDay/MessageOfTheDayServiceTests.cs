@@ -15,6 +15,7 @@ namespace XunitTestMessageOfTheDay
             private readonly Mock<IDayOfWeekService> _mockDayOfWeekService;
 
             private const string mockDayOfWeekMesssageText = "MockDayOfWeekMesssageText";
+            private const string mockDayOfWeekMesssageImageURI = "MockDayOfWeekMesssageImageURI";
 
             private readonly IMessageOfTheDayService _sut;
 
@@ -24,7 +25,7 @@ namespace XunitTestMessageOfTheDay
                 _mockDayOfWeekService = new Mock<IDayOfWeekService>();
                 _mockMessageService = new Mock<IMessageService>();
 
-                var message = new Message { Text = mockDayOfWeekMesssageText };
+                var message = new Message { Text = mockDayOfWeekMesssageText, ImageUri = mockDayOfWeekMesssageImageURI };
 
                 _mockDayOfWeekService.Setup(x => x.GetDayOfWeek()).Returns(DayOfWeek.Monday);
                 _mockMessageService.Setup(x => x.GetMessageOfTheDay(It.Is<int>(x => x == 1), It.IsAny<DayOfWeek>())).Returns(message);
@@ -37,7 +38,8 @@ namespace XunitTestMessageOfTheDay
             {
                 var expected = new MessageOfTheDayViewModel
                 {
-                    Message = mockDayOfWeekMesssageText
+                    Message = mockDayOfWeekMesssageText,
+                    ImageUri = mockDayOfWeekMesssageImageURI,
                 };
 
                 var result = _sut.GetMessageOfTheDay();
