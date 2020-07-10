@@ -36,9 +36,9 @@ namespace XunitTestMessageOfTheDay
             [Fact]
             public void WhenGetMessageOfDayThenExpectedMessageReturned()
             {
-                var expected = new MessageOfTheDayViewModel
+                var expected = new Message
                 {
-                    Message = mockDayOfWeekMesssageText,
+                    Text = mockDayOfWeekMesssageText,
                     ImageUri = mockDayOfWeekMesssageImageURI,
                 };
 
