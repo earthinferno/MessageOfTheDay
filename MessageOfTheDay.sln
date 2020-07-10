@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageOfTheDay", "MessageO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XunitTestMessageOfTheDay", "XunitTestMessageOfTheDay\XunitTestMessageOfTheDay.csproj", "{B6A5FC0C-5BFF-4DDB-B276-A3ED33A0A332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesBusinessLogic", "MessagesBusinessLogic\MessagesBusinessLogic.csproj", "{B7AF32C2-D9AB-41EB-80B3-40A82DD66759}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesApplicationLogic", "MessagesBusinessLogic\MessagesApplicationLogic.csproj", "{B7AF32C2-D9AB-41EB-80B3-40A82DD66759}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

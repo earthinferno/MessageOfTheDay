@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MessagesBusinessLogic\MessagesBusinessLogic.csproj" />
+    <ProjectReference Include="..\MessagesBusinessLogic\MessagesApplicationLogic.csproj" />
   </ItemGroup>
 
 </Project>
