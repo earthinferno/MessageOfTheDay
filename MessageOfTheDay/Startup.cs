@@ -1,6 +1,6 @@
 using System.Globalization;
-using MessagesBusinessLogic.Data;
-using MessagesBusinessLogic.Services;
+using MessagesApplicationLogic.Data;
+using MessagesApplicationLogic.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;

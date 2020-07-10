@@ -1,5 +1,5 @@
 ﻿using MessageOfTheDay.Models;
-using MessagesBusinessLogic.Services;
+using MessagesApplicationLogic.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 

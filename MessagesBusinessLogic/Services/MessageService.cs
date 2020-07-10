@@ -1,10 +1,10 @@
-﻿using MessagesBusinessLogic.Data;
-using MessagesBusinessLogic.Models;
+﻿using MessagesApplicationLogic.Data;
+using MessagesApplicationLogic.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MessagesBusinessLogic.Services
+namespace MessagesApplicationLogic.Services
 {
     public class MessageService : IMessageService
     {
@@ -31,9 +31,9 @@ namespace MessagesBusinessLogic.Services
                 .FirstOrDefault()?
                 .Message;
 
-            return message?.Text != null 
-                ? message : 
+            return message?.Text != null
+                ? message :
                 throw new Exception("No Data Found");
-       }
+        }
     }
 }

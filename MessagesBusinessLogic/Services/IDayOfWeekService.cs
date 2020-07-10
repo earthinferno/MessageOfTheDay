@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MessagesBusinessLogic.Services
+namespace MessagesApplicationLogic.Services
 {
     public interface IDayOfWeekService
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MessagesBusinessLogic.Models
+namespace MessagesApplicationLogic.Models
 {
     public class Day
     {
