@@ -1,7 +1,8 @@
-﻿using System;
+﻿using MessagesBusinessLogic.Services;
+using System;
 using System.Globalization;
 
-namespace MessageOfTheDay.Services
+namespace MessagesBusinessLogic.Services
 {
     public class DayOfWeekService : IDayOfWeekService
     {

@@ -1,10 +1,10 @@
-﻿using MessageOfTheDay.Data;
-using MessageOfTheDay.Models;
+﻿using MessagesBusinessLogic.Data;
+using MessagesBusinessLogic.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MessageOfTheDay.Services
+namespace MessagesBusinessLogic.Services
 {
     public class MessageService : IMessageService
     {

@@ -1,7 +1,7 @@
-﻿using MessageOfTheDay.Models;
+﻿using MessagesBusinessLogic.Models;
 using System.Collections.Generic;
 
-namespace MessageOfTheDay.Data
+namespace MessagesBusinessLogic.Data
 {
     public interface IMessages
     {

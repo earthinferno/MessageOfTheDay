@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MessageOfTheDay.Models
+namespace MessagesBusinessLogic.Models
 {
     public class Week
     {

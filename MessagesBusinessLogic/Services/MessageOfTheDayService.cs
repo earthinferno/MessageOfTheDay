@@ -1,7 +1,7 @@
-﻿using MessageOfTheDay.Models;
-using System;
+﻿using MessagesBusinessLogic.Models;
+using MessagesBusinessLogic.Services;
 
-namespace MessageOfTheDay.Services
+namespace MessagesBusinessLogic.Services
 {
     public class MessageOfTheDayService : IMessageOfTheDayService
     {

@@ -1,10 +1,8 @@
-﻿using MessageOfTheDay.Models;
+﻿using MessagesBusinessLogic.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace MessageOfTheDay.Data
+namespace MessagesBusinessLogic.Data
 {
     public class Messages : IMessages
     {

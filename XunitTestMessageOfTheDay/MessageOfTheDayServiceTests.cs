@@ -1,6 +1,6 @@
 using FluentAssertions;
-using MessageOfTheDay.Models;
-using MessageOfTheDay.Services;
+using MessagesBusinessLogic.Models;
+using MessagesBusinessLogic.Services;
 using Moq;
 using System;
 using Xunit;

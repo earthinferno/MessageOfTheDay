@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using MessageOfTheDay.Data;
-using MessageOfTheDay.Models;
-using MessageOfTheDay.Services;
+using MessagesBusinessLogic.Data;
+using MessagesBusinessLogic.Models;
+using MessagesBusinessLogic.Services;
 using Moq;
 using System;
 using System.Collections.Generic;

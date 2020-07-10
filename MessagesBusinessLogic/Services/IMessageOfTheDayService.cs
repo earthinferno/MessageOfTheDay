@@ -1,5 +1,5 @@
-﻿using MessageOfTheDay.Models;
-namespace MessageOfTheDay.Services
+﻿using MessagesBusinessLogic.Models;
+namespace MessagesBusinessLogic.Services
 {
     public interface IMessageOfTheDayService
     {

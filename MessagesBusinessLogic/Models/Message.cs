@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MessageOfTheDay.Models
+﻿namespace MessagesBusinessLogic.Models
 {
     public class Message
     {
