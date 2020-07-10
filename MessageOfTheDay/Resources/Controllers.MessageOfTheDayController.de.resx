@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="And Sunday always comes too late" xml:space="preserve">
-    <value>Et le dimanche arrive toujours trop tard</value>
+    <value>Und der Sonntag kommt immer zu spät</value>
   </data>
   <data name="I don't care if Monday's blue" xml:space="preserve">
-    <value>Je m'en fiche si le lundi est bleu</value>
+    <value>Es ist mir egal, ob Montag blau ist</value>
   </data>
   <data name="It's Friday, I'm in love" xml:space="preserve">
-    <value>C'est vendredi je suis amoureux</value>
+    <value>Es ist Freitag ich bin verliebt</value>
   </data>
   <data name="Saturday, wait" xml:space="preserve">
-    <value>Samedi, attends</value>
+    <value>Samstag, warte</value>
   </data>
   <data name="Thursday, I don't care about you" xml:space="preserve">
-    <value>Le gris de mardi ...</value>
+    <value>Donnerstag, du bist mir egal</value>
   </data>
   <data name="Tuesday's grey..." xml:space="preserve">
-    <value>Tuesday's grey...</value>
+    <value>Dienstag grau ...</value>
   </data>
   <data name="Tuesday's grey... and Wednesday too" xml:space="preserve">
-    <value>Mardi gris ... et mercredi aussi</value>
+    <value>Dienstag ist grau ... und Mittwoch auch</value>
   </data>
 </root>

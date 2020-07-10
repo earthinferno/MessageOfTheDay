@@ -1,4 +1,5 @@
-﻿using MessageOfTheDay.Services;
+﻿using MessageOfTheDay.Models;
+using MessageOfTheDay.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
@@ -23,8 +24,8 @@ namespace MessageOfTheDay.Controllers
         public IActionResult Index()
         {
             var message = _messageOfTheDayService.GetMessageOfTheDay();
-            message.Message = _localizer[message.Message];
-            return View(message);
+
+            return View(new MessageOfTheDayViewModel { ImageUri = message.ImageUri, Message = _localizer[message.Text] });
         }
     }
 }

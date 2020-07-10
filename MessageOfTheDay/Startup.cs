@@ -45,7 +45,8 @@ namespace MessageOfTheDay
             {
                 var cultures = new[] 
                 { new CultureInfo("en"),
-                  new CultureInfo("fr")
+                  new CultureInfo("fr"),
+                  new CultureInfo("de")
                 };
                 options.DefaultRequestCulture = new RequestCulture("en");
                 options.SupportedCultures = cultures;

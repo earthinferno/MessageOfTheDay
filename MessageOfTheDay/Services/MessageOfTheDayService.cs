@@ -14,14 +14,9 @@ namespace MessageOfTheDay.Services
             _dayOfWeekService = dayOfWeekService;
         }
 
-        public MessageOfTheDayViewModel GetMessageOfTheDay()
+        public Message GetMessageOfTheDay()
         {
-            var message = _messageService.GetMessageOfTheDay(1, _dayOfWeekService.GetDayOfWeek());
-            return new MessageOfTheDayViewModel
-            {
-                Message = message.Text,
-                ImageUri = message.ImageUri
-            };
+            return _messageService.GetMessageOfTheDay(1, _dayOfWeekService.GetDayOfWeek());
         }
     }
 }

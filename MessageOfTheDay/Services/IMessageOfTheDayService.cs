@@ -3,6 +3,6 @@ namespace MessageOfTheDay.Services
 {
     public interface IMessageOfTheDayService
     {
-        MessageOfTheDayViewModel GetMessageOfTheDay();
+        Message GetMessageOfTheDay();
     }
 }
